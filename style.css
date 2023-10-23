@@ -1,0 +1,270 @@
+body{
+  background-color: rgb(246, 244, 235);
+  box-sizing: border-box;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+header {
+
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  z-index: 99;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+  min-height: 80px;
+
+}
+header > nav.navbar{
+ 
+}
+button{
+  border: 0px !important;
+}
+.navbar-light .navbar-nav .nav-link {
+  color: black;
+  font-weight: 600;
+}
+.nav-item:hover{
+    background-color:#ffc107;
+    border-radius: 10px;
+}
+.main-icons{
+  cursor: pointer;
+}
+.total-item{
+  position: absolute;
+  top: 18px;
+  left: 23px;
+}
+main{
+  margin-top: 120px;
+}
+.logo {
+  width: 50px;
+  height: 40px;
+}
+
+section {
+  width: 100%;
+  padding: 60px 0px;
+}
+.hero-image{
+  transition-duration: 15s;
+  cursor: pointer;
+transform: rotate(30deg);
+  
+}
+.hero-image:hover{
+  transition-duration: 15s;
+  transform: rotate(-30deg);
+}
+.circle-1 {
+  top: 10%;
+  z-index: -1;
+  position: absolute;
+  height: 300px;
+  width: 300px;
+  border-radius: 50%;
+  left: 20%;
+}
+.circle-2 {
+  background: #f5dd7b;
+  top: 2%;
+  z-index: -2;
+  position: absolute;
+  height: 350px;
+  width: 350px;
+  border-radius: 50%;
+  left: 15%;
+}
+.circle-3 {
+  background: #fde994;
+  top: -7%;
+  z-index: -3;
+  position: absolute;
+  height: 400px;
+  width: 400px;
+  border-radius: 50%;
+  left: 10%;
+}
+.offer {
+  background-color: rgb(52, 4, 123);
+  color: white;
+  width: 150px;
+  border-radius: 10px;
+  position: absolute;
+  top: 0%;
+}
+.offer {
+  animation: offeranim 15s infinite ease;
+  cursor: pointer;
+  width: 30%;
+}
+.offer .white{
+    width: 10px;
+    height: 10px;
+    background-color: white;
+    position: absolute;
+    border-radius: 50%;
+    bottom: -6%;
+    left: -1%;
+    padding: 10px;
+}
+.offer .white .yellow{
+    background-color: yellow;
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    border-radius: 50%;
+    top: 20%;
+    left: 25%;
+}
+
+.card{
+  height: 285px;
+  cursor: pointer;
+}
+.card:hover{
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.shoes-row .card img{
+  height: 200px;
+  transition-duration: 3s;
+  opacity: 0.8;
+
+}
+.shoes-row img:hover{
+  scale: 1.5;
+  opacity:1;
+  transition-duration:3s;
+  rotate: -20deg;
+}
+img{
+  height: 200px;
+  border-radius: 20px;
+}
+.favourite-collection{
+
+}
+.favourite-row {
+
+}
+.favourite-row >div{
+
+}
+.favourite-row  img{
+  height:250px;
+  width:90%;
+}
+.fa-heart{
+  position: absolute;
+  left: 90%;
+  top:5px;
+  cursor: pointer;
+  z-index: 3;
+}
+.heart-red{
+  color: red;
+}
+.assisting-brand img{
+  height: 100px;
+}
+.news-letter{
+  /* background-color: rgb(251,226,71); */
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.email-image{
+  height: 220px;
+  width: 150px;
+  position: absolute;
+ top:0px;
+  left: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  
+}
+.email-image img{
+  height: 300px;
+  width: 150px;
+}
+@keyframes offeranim {
+  0% {
+    top: 0px;
+  }
+  25% {
+    top: 70%;
+  }
+  50% {
+    top: 50%;
+  }
+  75% {
+    top: 25%;
+  }
+  100% {
+    top: 0%;
+  }
+}
+/* Tabview */
+@media screen and (max-width: 992px) and (min-width: 567px) {
+  .navbar-expand-sm .navbar-nav {
+    margin-left: 30%;
+  }
+  .main-icons {
+    display: none;
+  }
+ 
+  .hero-image {
+    height: 80%;
+  }
+  .circle-1 {
+  }
+  .circle-2 {
+    top: 6% !important;
+  }
+  .circle-3 {
+    top: 0% !important;
+    left: 7% !important;
+  }
+}
+@media screen and (min-width: 992px) {
+  .navbar-expand-sm .navbar-nav {
+    margin-left: 30%;
+  }
+}
+/* Mobile view */
+@media screen and (max-width: 567px) {
+  .circle-1 {
+    left: 16%;
+  }
+  .offer{
+    width: 35%;
+  }
+  .hero-content {
+    margin-top: 150px;
+  }
+  .hero-image {
+    width: 95%;
+  }
+  .circle-2 {
+    left: 10% !important;
+  }
+  .circle-3 {
+    top: -11%;
+    left: 4%;
+  }
+  .main-icons {
+    display: none;
+  }
+}
+
+.owl-stage{
+  display: flex;
+}
